@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #fff;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(115, 22, 18);
+    --color-red2: rgb(219, 0, 0);
+}
+body{
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    background-color: var(--color-white);
+    border-radius: 10px 30px; 
+    padding: 0.3em 1em;
+    width: 8em;
+    text-align: center;   
+}
+#container{
+    margin-top: 2em;
+}
+div#add-item{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+input{
+    outline: none;
+    border: none;
+    padding: 0.7em 6em;
+    border-radius: 2em;
+}
+input::placeholder{
+    text-align: center;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: var(--color-dark2);
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+#btn-task:hover{
+    background-color: var(--color-dark3);
+}
+svg{
+    height: 2em;
+    width: 2em;
+}
+main{
+    margin-top: 2em;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-white);
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 0.5em 0;
+    transition: .5s;
+}
+li:hover{
+    background-color: var(--color-dark3);
+    border-radius: 1em;
+    padding-left: 0.5em;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+button#done{
+    background-color: var(--color-green2);
+    transition: .5s;
+}
+button#done:hover{
+    background-color: var(--color-green);
+}
+button#delete{
+    background-color: var(--color-red2);
+    transition: .5s;
+}
+button#delete:hover{
+    background-color: var(--color-red);
+}
